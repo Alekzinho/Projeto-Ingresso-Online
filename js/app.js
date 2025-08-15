@@ -56,3 +56,34 @@ console.log(parseInt(string));
 }
 
 converterString(numeroString);
+
+// Desafio 3: Calculadora simples
+function adicao(numero1, numero2) {
+    console.log(numero1 + numero2);
+}
+
+function subtracao(numero1, numero2) {
+    console.log(numero1 - numero2);
+}
+
+function multiplicacao(numero1, numero2) {
+    console.log(numero1 * numero2);
+} 
+
+function divisao(numero1, numero2) {
+    console.log(numero1 / numero2);
+}
+
+function calcular(numero1, numero2, simboloOperacao) {
+    if (simboloOperacao == "+") {
+        adicao(numero1, numero2);
+    } else if (simboloOperacao == "-") {
+        subtracao(numero1, numero2);
+    } else if (simboloOperacao == "*") {
+        multiplicacao(numero1, numero2);
+    } else if (simboloOperacao == "/") {
+        divisao(numero1 , numero2);
+    }
+}
+
+calcular(2,10,"*");
