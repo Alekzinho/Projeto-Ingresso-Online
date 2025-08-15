@@ -6,6 +6,7 @@ function comprar() {
     let quantidadeCadeiraSuperior = parseInt(document.getElementById("qtd-superior").textContent);
     let quantidadeCadeiraInferior = parseInt(document.getElementById("qtd-inferior").textContent);
 
+    // Desafio 1: Alerta de quantidade inválida
     if (quantidadeDeIngressos < 0) {
         alert("Selecione uma quantidade válida!");
         return;
@@ -14,7 +15,7 @@ function comprar() {
     //Comprando ingressos de pista
     if (tipoDeIngresso.includes("pista")) {
         if (quantidadeDeIngressos > quantidadePista) {
-            alert("Não é possível comprar essa quantidade de ingressos de Pista.");
+            alert("Não é possível comprar essa quantidade de ingressos para pista.");
             return;
         } else {
            quantidadePista = quantidadePista - quantidadeDeIngressos;
@@ -25,7 +26,7 @@ function comprar() {
     //Comprando ingressos de cadeira superior
     if (tipoDeIngresso.includes("superior")) {
         if (quantidadeDeIngressos > quantidadeCadeiraSuperior) {
-            alert("Não é possível comprar essa quantidade de ingressos de Cadeira Superior.");
+            alert("Não é possível comprar essa quantidade de ingressos para cadeira superior.");
             return;
         } else {
            quantidadeCadeiraSuperior = quantidadeCadeiraSuperior - quantidadeDeIngressos;
@@ -36,7 +37,7 @@ function comprar() {
     //Comprando ingressos de cadeira inferior
     if (tipoDeIngresso.includes("inferior")) {
         if (quantidadeDeIngressos > quantidadeCadeiraInferior) {
-            alert("Não é possível comprar essa quantidade de ingressos de Cadeira Inferiror.");
+            alert("Não é possível comprar essa quantidade de ingressos para cadeira inferiror.");
             return;
         } else {
            quantidadeCadeiraInferior = quantidadeCadeiraInferior - quantidadeDeIngressos;
