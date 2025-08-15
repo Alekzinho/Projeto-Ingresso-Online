@@ -47,3 +47,12 @@ function comprar() {
 
     document.getElementById("qtd").value = '';
 }
+
+// Desafio 2: Converter string em número inteiro
+let numeroString = "5"
+
+function converterString(string) {
+console.log(parseInt(string));
+}
+
+converterString(numeroString);
