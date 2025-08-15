@@ -87,3 +87,14 @@ function calcular(numero1, numero2, simboloOperacao) {
 }
 
 calcular(2,10,"*");
+
+// Desafio 4: Verificar número par ou ímpar
+function verificarNumero(numero) {
+    if (numero % 2 == 0) {
+        console.log(`O número ${numero} é par.`);
+    } else {
+        console.log(`O número ${numero} é ímpar.`);
+    }
+}
+
+verificarNumero(1);
