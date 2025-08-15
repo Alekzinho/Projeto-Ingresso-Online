@@ -98,3 +98,19 @@ function verificarNumero(numero) {
 }
 
 verificarNumero(1);
+
+// Desafio 5: Converter temepratura
+let celsius = "celsius";
+let fahrenheit = "fahrenheit";
+
+function converterTemperatura(temperaturaEscalaOposta, escalaDesejada) {
+    if (escalaDesejada == celsius) {
+        celsius = parseInt((temperaturaEscalaOposta - 32) / 1.8);
+        console.log(`A temperatura é de ${celsius}°C.`);
+    } else if (escalaDesejada == fahrenheit) {
+        fahrenheit = (temperaturaEscalaOposta * 1.8) +32;
+        console.log(`A temperatura é de ${fahrenheit}°F.`);
+    }
+}
+
+converterTemperatura(76,celsius);
